@@ -1,4 +1,5 @@
-import React from 'react';
+// Bismillah
+import React from "react";
 
 const Reviews = () => {
   return (
