@@ -1,11 +1,18 @@
-// Bismillah
-import React from "react";
+import BackgroundImage from "../../assets/images/bg.webp";
+import Slider from "../../components/UI/Carousel";
 
 const Main = () => {
   return (
-    <div>
-      <h1>Main page</h1>
-    </div>
+    <>
+      <div
+        style={{
+          backgroundImage: `url(${BackgroundImage})`,
+          width: "100vw",
+          height: "100vh",
+          zIndex: "0",
+        }}
+      ></div>
+    </>
   );
 };
 
