@@ -1,5 +1,4 @@
 import BackgroundImage from "../../assets/images/bg.webp";
-import Slider from "../../components/UI/Carousel";
 
 const Main = () => {
   return (
@@ -10,6 +9,7 @@ const Main = () => {
           width: "100vw",
           height: "100vh",
           zIndex: "0",
+          backgroundSize: "cover",
         }}
       ></div>
     </>
