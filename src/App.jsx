@@ -12,6 +12,8 @@ const App = () => {
       <Router />
       <Navbar/>
       <About/>
+      <Travel/>
+      
     </div>
   );
 };
