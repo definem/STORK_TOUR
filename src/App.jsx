@@ -6,6 +6,7 @@ import Main from "./pages/Main/main";
 import About from "./pages/About/about";
 import Travel from "./pages/Travel/travel";
 import Reviews from "./pages/Reviews/reviews";
+import Contact from "./pages/Contact/contact";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <About/>
       <Travel/>
       <Reviews/>
-
+      <Contact/>
     </div>
   );
 };
