@@ -19,26 +19,30 @@ const Contact = () => {
   return (
     <>
       <div className="container">
-        <div className="items-center mt-[120px] justify-center flex">
-          <h1 className="text-[34px] text-[#0154A7]">Что Вас ожидает?</h1>
-          <p className="mt-[20px] mb-[70px]">
+        <div className="mt-[120px]">
+          <h1 className="text-center text-[34px] text-[#0154A7]">
+            Что Вас ожидает?
+          </h1>
+          <p className="text-center text-[18px] text-[#1E1E1E] mt-[20px]">
             Наша команда работает только для Вас!
           </p>
         </div>
-        <div className="flex gap-[241px] ">
-          <div className="items-center justify-between">
-            <img src={Speed} alt="Speed icon" />
-            <p className="mt-[20px]">Скорость</p>
+
+        <div className="flex items-center justify-between mt-[75px]">
+          <div className="">
+            <img className="" src={Speed} alt="Speed icon" />
+            <p className="">Скорость</p>
           </div>
-          <div className="items-center justify-between">
+          <div className="">
             <img src={Privacy} alt="Privacy icon" />
-            <p className="mt-[20px]">Безопасность</p>
+            <p className="">Безопасность</p>
           </div>
-          <div className="items-center justify-between">
+          <div className="">
             <img src={Like} alt="Like icon" />
-            <p className="mt-[20px]">Комфорт и Удобство</p>
+            <p className="">Комфорт и Удобство</p>
           </div>
         </div>
+
         <div className="mb-[110px] mt-[145px]">
           <div className="flex items-center justify-between">
             <h1 className="mb-[80px] text-[48px] font-semibold">
@@ -93,10 +97,18 @@ const Contact = () => {
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">Главная</li>
-            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">О компании</li>
-            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Путешествия</li>
-            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Отзывы</li>
-            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Контакты</li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
+              О компании
+            </li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
+              Путешествия
+            </li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
+              Отзывы
+            </li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
+              Контакты
+            </li>
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">
@@ -131,10 +143,10 @@ const Contact = () => {
               Социальные сети
             </li>
             <div className="flex gap-[10px]">
-              <img src={Twitter} alt="" title="Twitter"/>
-              <img src={Facebook} alt="" title="Facebook"/>
-              <img src={YouTube} alt="" title="YouTube"/>
-              <img src={Instagram} alt="" title="Instagram"/>
+              <img src={Twitter} alt="" title="Twitter" />
+              <img src={Facebook} alt="" title="Facebook" />
+              <img src={YouTube} alt="" title="YouTube" />
+              <img src={Instagram} alt="" title="Instagram" />
             </div>
           </ul>
         </div>
