@@ -93,23 +93,23 @@ const Contact = () => {
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">Главная</li>
-            <li className="text-[18px] mt-[15px]">О компании</li>
-            <li className="text-[18px] mt-[15px]">Путешествия</li>
-            <li className="text-[18px] mt-[15px]">Отзывы</li>
-            <li className="text-[18px] mt-[15px]">Контакты</li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">О компании</li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Путешествия</li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Отзывы</li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">Контакты</li>
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">
               Контактные данные
             </li>
-            <div className="flex gap-[10px] mt-[15px]">
+            <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Location} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
                 Адрес:
               </span>
               <p className="text-[18px]">Company adress</p>
             </div>
-            <div className="flex gap-[10px] mt-[15px]">
+            <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Headphone} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
                 Телефон номер:
@@ -118,7 +118,7 @@ const Contact = () => {
                 +998 90 123 45 67
               </a>
             </div>
-            <div className="flex gap-[10px] mt-[15px]">
+            <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Mail} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
                 Эл.почта:
@@ -131,10 +131,10 @@ const Contact = () => {
               Социальные сети
             </li>
             <div className="flex gap-[10px]">
-              <img src={Twitter} alt="" />
-              <img src={Facebook} alt="" />
-              <img src={YouTube} alt="" />
-              <img src={Instagram} alt="" />
+              <img src={Twitter} alt="" title="Twitter"/>
+              <img src={Facebook} alt="" title="Facebook"/>
+              <img src={YouTube} alt="" title="YouTube"/>
+              <img src={Instagram} alt="" title="Instagram"/>
             </div>
           </ul>
         </div>

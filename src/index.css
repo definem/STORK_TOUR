@@ -29,3 +29,54 @@ body {
   padding: 0 20px;
 }
 
+.hoverMe {
+  width: max-content;
+  /* font-size: 72px; */
+  position: relative;
+  cursor: pointer;
+  margin: 100px auto;
+}
+
+.hoverMe::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: aqua;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scalex(0);
+}
+
+.hoverMe:hover:after {
+  transform: scalex(1.2);
+}
+
+/* ---------- */
+
+.hoverMee {
+  width: max-content;
+  /* font-size: 72px; */
+  position: relative;
+  cursor: pointer;
+  /* margin: 100px auto; */
+}
+
+.hoverMee::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 90%;
+  left: 0;
+  background-color: aqua;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scalex(0);
+}
+
+.hoverMee:hover:after {
+  transform: scalex(1.2);
+}

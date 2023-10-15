@@ -9,11 +9,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between pt-[30px]">
             <p className='text-white font-bold'>STOCK TOUR</p>
             <div className="flex items-center justify-between gap-[50px] text-[18px] text-white font-medium">
-              <p>Главная</p>
-              <p>О компании</p>
-              <p>Путешествия</p>
-              <p>Отзывы</p>
-              <p>Контакты</p>
+              <p className='hoverMe'>Главная</p>
+              <p className='hoverMe'>О компании</p>
+              <p className='hoverMe'>Путешествия</p>
+              <p className='hoverMe'>Отзывы</p>
+              <p className='hoverMe'>Контакты</p>
             </div>
             <SelectLang/>
           </div>
