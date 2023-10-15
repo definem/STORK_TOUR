@@ -83,7 +83,7 @@ const Contact = () => {
             ></div>
           </div>
         </div>
-        <div className="flex justify-between mb-[127px]">
+        <div className="flex justify-between mb-[100px]">
           <ul>
             <li>
               <h1 className="text-[#0154A7] text-[20px] font-semibold">
