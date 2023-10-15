@@ -28,27 +28,27 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-between mt-[75px]">
-          <div className="">
+        <div className="flex gap-x-[230px] items-center justify-center mt-[75px]">
+          <div className="flex flex-col items-center justify-center gap-[31px]">
             <img className="" src={Speed} alt="Speed icon" />
             <p className="">Скорость</p>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center justify-center gap-[31px]">
             <img src={Privacy} alt="Privacy icon" />
             <p className="">Безопасность</p>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center justify-center gap-[31px]">
             <img src={Like} alt="Like icon" />
             <p className="">Комфорт и Удобство</p>
           </div>
         </div>
 
         <div className="mb-[110px] mt-[145px]">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between bg-red-500">
             <h1 className="mb-[80px] text-[48px] font-semibold">
               Мы предлагаем все виды туризма
             </h1>
-            <div className="flex gap-[18px]">
+            <div className="flex gap-[18px] bg-red-300">
               <img src={LeftArrow} alt="left arrow icon" />
               <img src={RightArrow} alt="right arrow icon" />
             </div>
