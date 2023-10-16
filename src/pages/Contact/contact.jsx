@@ -14,41 +14,44 @@ import Twitter from "../../assets/icons/Socials/twitter.svg";
 import Facebook from "../../assets/icons/Socials/facebook.svg";
 import YouTube from "../../assets/icons/Socials/youtube.svg";
 import Instagram from "../../assets/icons/Socials/instagram.svg";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="container">
         <div className="mt-[120px]">
           <h1 className="text-center text-[34px] text-[#0154A7]">
-            Что Вас ожидает?
+            {t("service.title")}
           </h1>
           <p className="text-center text-[18px] text-[#1E1E1E] mt-[20px]">
-            Наша команда работает только для Вас!
+            {t("service.desc")}
           </p>
         </div>
 
         <div className="flex gap-x-[230px] items-center justify-center mt-[75px]">
           <div className="flex flex-col items-center justify-center gap-[31px]">
             <img className="" src={Speed} alt="Speed icon" />
-            <p className="">Скорость</p>
+            <p className="">{t("service.item1")}</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-[31px]">
             <img src={Privacy} alt="Privacy icon" />
-            <p className="">Безопасность</p>
+            <p className="">{t("service.item2")}</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-[31px]">
             <img src={Like} alt="Like icon" />
-            <p className="">Комфорт и Удобство</p>
+            <p className="">{t("service.item3")}</p>
           </div>
         </div>
 
         <div className="mb-[110px] mt-[145px]">
-          <div className="flex items-center justify-between bg-red-500">
-            <h1 className="mb-[80px] text-[48px] font-semibold">
-              Мы предлагаем все виды туризма
+          <div className="flex items-center justify-between mb-[80px] ">
+            <h1 className="text-[48px] font-semibold">
+              {t("suggestionTitle")}
             </h1>
-            <div className="flex gap-[18px] bg-red-300">
+            <div className="flex gap-[18px]">
               <img src={LeftArrow} alt="left arrow icon" />
               <img src={RightArrow} alt="right arrow icon" />
             </div>
@@ -57,34 +60,94 @@ const Contact = () => {
           <div className="flex gap-[20px]">
             <div
               style={{
-                backgroundImage: `url(${CardImg2})`,
-                width: "460px",
-                height: "300px",
-                zIndex: "0",
-                backgroundSize: "cover",
-                borderRadius: "15px",
+                position: "relative",
               }}
-            ></div>
+            >
+              <img
+                className="hover-img"
+                src={CardImg2}
+                alt=""
+                style={{
+                  width: "100%",
+                  borderRadius: "14px",
+                }}
+              />
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: 32,
+                  left: 30,
+                  color: "#FFF",
+                  maxWidth: "297px",
+                  fontSize: "24px",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  lineHeight: "normal",
+                }}
+              >
+                Хорезм – загадочный край
+              </p>
+            </div>
             <div
               style={{
-                backgroundImage: `url(${CardImg2})`,
-                width: "460px",
-                height: "300px",
-                zIndex: "0",
-                backgroundSize: "cover",
-                borderRadius: "15px",
+                position: "relative",
               }}
-            ></div>
+            >
+              <img
+                className="hover-img"
+                src={CardImg2}
+                alt=""
+                style={{
+                  width: "100%",
+                  borderRadius: "14px",
+                }}
+              />
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: 32,
+                  left: 30,
+                  color: "#FFF",
+                  maxWidth: "297px",
+                  fontSize: "24px",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  lineHeight: "normal",
+                }}
+              >
+                Хорезм – загадочный край
+              </p>
+            </div>
             <div
               style={{
-                backgroundImage: `url(${CardImg2})`,
-                width: "460px",
-                height: "300px",
-                zIndex: "0",
-                backgroundSize: "cover",
-                borderRadius: "15px",
+                position: "relative",
               }}
-            ></div>
+            >
+              <img
+                className="hover-img"
+                src={CardImg2}
+                alt=""
+                style={{
+                  width: "100%",
+                  borderRadius: "14px",
+                }}
+              />
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: 32,
+                  left: 30,
+                  color: "#FFF",
+                  maxWidth: "297px",
+                  fontSize: "24px",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  lineHeight: "normal",
+                }}
+              >
+                Хорезм – загадочный край
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex justify-between mb-[100px]">
@@ -96,35 +159,37 @@ const Contact = () => {
             </li>
           </ul>
           <ul>
-            <li className="pb-[12px] text-[18px] font-semibold">Главная</li>
-            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
-              О компании
+            <li className="pb-[12px] text-[18px] font-semibold">
+              {t("footer.glavnaya")}
             </li>
             <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
-              Путешествия
+              {t("footer.item1")}
             </li>
             <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
-              Отзывы
+              {t("footer.item2")}
             </li>
             <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
-              Контакты
+              {t("footer.item3")}
+            </li>
+            <li className="text-[18px] mt-[15px] hoverMee hover:text-[#0154A7]">
+              {t("footer.item4")}
             </li>
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">
-              Контактные данные
+              {t("footer.contact")}
             </li>
             <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Location} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
-                Адрес:
+                {t("footer.address")}
               </span>
               <p className="text-[18px]">Company adress</p>
             </div>
             <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Headphone} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
-                Телефон номер:
+                {t("footer.phone")}
               </span>
               <a href="tel:+998 90 123 45 67" className="text-[18px]">
                 +998 90 123 45 67
@@ -133,14 +198,14 @@ const Contact = () => {
             <div className="flex gap-[10px] mt-[15px] hoverMee hover:text-[#0154A7]">
               <img src={Mail} alt="" />
               <span className="text-[18px] text-[#1E1E1E] font-semibold">
-                Эл.почта:
+                {t("footer.mail")}
               </span>
               <p className="text-[18px]">companymail@gmail.com</p>
             </div>
           </ul>
           <ul>
             <li className="pb-[12px] text-[18px] font-semibold">
-              Социальные сети
+              {t("footer.social")}
             </li>
             <div className="flex gap-[10px]">
               <img src={Twitter} alt="" title="Twitter" />

@@ -1,6 +1,9 @@
 // Bismillah
+import { useTranslation } from "react-i18next";
 
 const index = () => {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="pb-[30px]">

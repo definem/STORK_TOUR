@@ -1,6 +1,9 @@
 import BackgroundImage from "../../assets/images/bg.webp";
+import { useTranslation } from "react-i18next";
+
 
 const Main = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -15,12 +18,12 @@ const Main = () => {
         <div className="container">
           <h2
             style={{ paddingTop: "324px" }}
-            className="text-[64px] text-white text-bold max-w-[560px]"
+            className="text-[64px] text-white text-bold max-w-[580px]"
           >
-            Лучшие туры по Узбекистану
+            {t("hero.title")}
           </h2>
           <h4 className="text-[24px] text-white font-normal w-[352px] h-[53px]">
-            Мы предлагаем вам незабываемое путешествие
+            {t("hero.subtitle")}
           </h4>
         </div>
       </div>

@@ -20,10 +20,10 @@ ul {
 }
 
 body {
-  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-.container{
+.container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -34,7 +34,6 @@ body {
   /* font-size: 72px; */
   position: relative;
   cursor: pointer;
-  margin: 100px auto;
 }
 
 .hoverMe::after {
@@ -80,3 +79,11 @@ body {
 .hoverMee:hover:after {
   transform: scalex(1.2);
 }
+
+/* .hover-img {
+  transform: 0.5s !important;
+}
+.hover-img:hover {
+  opacity: 0.6;
+  background: black;
+} */
